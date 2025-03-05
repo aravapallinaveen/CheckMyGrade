@@ -119,3 +119,22 @@ class LoginUser:
     def Decrypt_password():
     # Implement decryption logic here
         pass    
+
+
+    class Admin:
+        def __init__(self, first_name, last_name, email_address):
+            self.first_name = first_name
+            self.last_name = last_name
+            self.email_address = email_address
+
+        def admin_details(self):
+            print(f"Name: {self.first_name} {self.last_name}")
+            print(f"Email: {self.email_address}")
+
+        def modify_admin_details(self, first_name=None, last_name=None, email_address=None):
+            if first_name:
+                self.first_name = first_name
+            if last_name:
+                self.last_name = last_name
+            if email_address:
+                self.email_address = email_address
